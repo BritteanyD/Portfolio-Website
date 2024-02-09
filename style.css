@@ -16,65 +16,118 @@ nav {
 }
 
 .navMenuLink {
-    color: #304254;
-    display: flex;
-    list-style-type: none;
-    white-space: nowrap;
+  color: #304254;
+  display: flex;
+  list-style-type: none;
+  white-space: nowrap;
 }
 
 #horizontalMenu {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #verticalMenu {
-   display: none; 
-   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 1.5rem;
-    background-color: #efefef;
-    margin: 0 0 0 auto;
-    padding: 0;
-    border: 12px solid #efefef;
-    height: 100%;
-    width: 400px;
-    max-width: 80vw;
-    overflow: auto;
-    box-sizing: border-box;
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    transform: translateX(400px);
-    transition: all 0.35s;
+  display: none;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.5rem;
+  background-color: #efefef;
+  margin: 0 0 0 auto;
+  padding: 0;
+  border: 12px solid #efefef;
+  height: 100%;
+  width: 400px;
+  max-width: 80vw;
+  overflow: auto;
+  box-sizing: border-box;
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  transform: translateX(400px);
+  transition: all 0.35s;
 }
 
 .navMenuLinkContent {
-    display: inline-block;
-    text-decoration-line: none;
-    font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 500;
-    white-space: nowrap;
-    padding: 10px 16px;
-    margin-right: auto;
-    color: #304254;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: inline-block;
+  text-decoration-line: none;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 10px 16px;
+  margin-right: auto;
+  color: #304254;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .myName {
-    color: #000000;
-    font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
-    text-align: center;
-    text-transform:uppercase;
-    letter-spacing: 0em;
-    font-weight: 800;
-    font-size: 90px;
-    margin: 20px;
+  color: #000000;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-weight: 800;
+  font-size: 90px;
+  margin: 20px;
 }
 
 .jobTitle {
-    color: #304254;
-    font-size: 30px; 
+  color: #000000;
+  font-size: 30px;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  letter-spacing: 0em;
+  margin-top: 50px;
+}
+
+.homeGif {
+border-radius: 70px;
+}
+.homeInfo {
+    display:grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+.aboutInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.aboutContent {
+    grid-column: 2;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.aboutMe {
+  color: #000000;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-weight: 800;
+  font-size: 90px;
+  margin: 50px;
+}
+
+.picture {
+    grid-column: 1;
+}
+
+.myPhoto {
+    margin: 60px;
+    max-width: 100%;
+    height: 100%;
+    border-color: #000000;
+    border-style: groove;
+}
+
+.aboutContent p {
+    font-size: 20px;
+    font-weight: 500;
     font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #304254; 
+    text-align: left; 
     margin-left: 90px;
 }
