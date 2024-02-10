@@ -62,7 +62,7 @@ nav {
 }
 
 .myName,
-.myProjects {
+.myProjects, .contact, .background {
   color: #000000;
   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
