@@ -61,7 +61,8 @@ nav {
   text-overflow: ellipsis;
 }
 
-.myName, .myProjects {
+.myName,
+.myProjects {
   color: #000000;
   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
@@ -82,22 +83,22 @@ nav {
 }
 
 .homeGif {
-border-radius: 70px;
+  border-radius: 70px;
 }
 .homeInfo {
-    display:grid;
-    grid-template-columns: 2fr 1.5fr;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
 }
 
 .aboutInfo {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .aboutContent {
-    grid-column: 2;
-    margin-top: 60px;
-    margin-right: 60px;
+  grid-column: 2;
+  margin-top: 60px;
+  margin-right: 60px;
 }
 
 .aboutMe {
@@ -112,50 +113,85 @@ border-radius: 70px;
 }
 
 .picture {
-    grid-column: 1;
+  grid-column: 1;
 }
 
 .myPhoto {
-    margin: 60px;
-    max-width: 100%;
-    height: 100%;
-    border-color: #000000;
-    border-style: groove;
+  margin: 60px;
+  max-width: 100%;
+  height: 100%;
+  border-color: #000000;
+  border-style: groove;
 }
 
 .aboutContent p {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #304254; 
-    text-align: left; 
-    margin-left: 90px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #304254;
+  text-align: left;
+  margin-left: 90px;
 }
 
-.word1, .word2, .word3, .word4, .word5, .word6, .word7, .word8, .word9, .word10, .word11 {
-    width: 150px;
-    height: 100px;
-    text-align: center;
-    margin-top: 5px;
+.word1,
+.word2,
+.word3,
+.word4,
+.word5,
+.word6,
+.word7,
+.word8,
+.word9,
+.word10,
+.word11 {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 .boxes {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 70px;
-    
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 70px;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
-    height: 100px;
-    width: 100px;
-    border-color: #3882f6;
-    border-style: solid;
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11 {
+  height: 150px;
+  width: 350px;
+  border: 2px solid white;
 }
 
-.box1parents, .box2parents, .box3parents, .box4parents, .box5parents, .box6parents, .box7parents, .box8parents, .box9parents, .box10parents, .box11parents {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.box1parents,
+.box2parents,
+.box3parents,
+.box4parents,
+.box5parents,
+.box6parents,
+.box7parents,
+.box8parents,
+.box9parents,
+.box10parents,
+.box11parents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
 }
