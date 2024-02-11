@@ -2,6 +2,48 @@ html {
   background: rgb(241, 238, 232);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+
 nav {
   text-decoration: none;
   font-size: 16px;
@@ -75,6 +117,10 @@ nav {
   margin: 20px;
 }
 
+.myName {
+    animation: slideInFromTop 1s ease forwards;
+}
+
 .jobTitle {
   color: #000000;
   font-size: 30px;
@@ -82,11 +128,22 @@ nav {
   text-align: center;
   letter-spacing: 0em;
   margin-top: 50px;
+  animation: slideInFromLeft 1s ease forwards;
+  animation-delay: 0.5s;
 }
 
 .homeGif {
   border-radius: 70px;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 1s;
 }
+
+.myName,
+.jobTitle,
+.homeGif {
+  opacity: 0;
+}
+
 .homeInfo {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
@@ -254,11 +311,12 @@ nav {
 }
 
 .bgContent {
-    margin-top: 100px;
-    text-align: center;
+  margin-top: 100px;
+  text-align: center;
 }
 
-.bgContent, .bgContent2 {
+.bgContent,
+.bgContent2 {
   font-size: 20px;
   font-weight: 500;
   color: #304254;
@@ -266,10 +324,10 @@ nav {
 }
 
 .bgContent2 {
-    margin-top: 40px;
-    margin-left: 240px;
+  margin-top: 40px;
+  margin-left: 240px;
 }
 
 li {
-    padding: 10px;
+  padding: 10px;
 }
