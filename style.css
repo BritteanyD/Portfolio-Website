@@ -1,5 +1,5 @@
 html {
-  background: rgb(241, 238, 232);
+  background: radial-gradient(circle, rgba(254,249,245,1) 51%, rgba(172,226,166,1) 100%);
 }
 
 @keyframes fadeIn {
@@ -10,6 +10,18 @@ html {
     opacity: 1;
   }
 }
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 @keyframes slideInFromLeft {
     0% {
@@ -66,7 +78,7 @@ nav {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   height: 50px;
-  background-color: rgb(241, 238, 232);
+  background-color: radial-gradient(circle, rgba(254,249,245,1) 51%, rgba(172,226,166,1) 100%);
 }
 
 .navMenuLink {
@@ -194,7 +206,7 @@ nav {
   border-color: #000000;
   border-style: groove;
   opacity: 0;
-  animation: fadeIn 2s ease forwards;
+  animation: fadeIn 2s ease forwards, float 3s ease-in-out infinite;;
 }
 
 .aboutContent p {
@@ -205,6 +217,10 @@ nav {
   text-align: left;
   margin-left: 90px;
   animation: slideInFromBottom 1s ease forwards;
+}
+
+.myProjects {
+    animation: slideInFromTop 1s ease forwards;
 }
 
 .word1,
@@ -246,7 +262,6 @@ nav {
 .box11 {
   height: 150px;
   width: 350px;
-  border: 2px solid white;
 }
 
 .box1parents,
@@ -263,6 +278,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 10px 10px 20px 4px rgba(0,0,0,0.75);
 }
 
 .video {
@@ -279,6 +295,7 @@ nav {
   font-weight: 800;
   font-size: 90px;
   margin-top: 20px;
+  animation: fadeIn 2s ease;
 }
 
 .contactInfo {
@@ -296,12 +313,14 @@ nav {
   width: 65vw;
   height: 300px;
   margin-left: 290px;
+  box-shadow: 5px 5px 12px 4px rgba(206, 202, 202, 0.75);
 }
 
 .linkedin,
 .email-icon {
   width: 70px;
   height: 70px;
+  animation: float 3s ease-in-out infinite;
 }
 
 .icons {
@@ -310,6 +329,10 @@ nav {
   gap: 70px;
   color: #304254;
   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.icons img {
+    animation: float 3s ease-in-out infinite;
 }
 
 .icons1,
@@ -325,6 +348,10 @@ nav {
   text-align: center;
 }
 
+.background {
+    animation: slideInFromTop 1s ease forwards;
+}
+
 .bgContent {
   margin-top: 100px;
   text-align: center;
@@ -336,11 +363,16 @@ nav {
   font-weight: 500;
   color: #304254;
   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  animation: slideInFromBottom 1s ease forwards;
 }
 
 .bgContent2 {
   margin-top: 40px;
   margin-left: 240px;
+}
+
+ul {
+    list-style:square;
 }
 
 li {
