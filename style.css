@@ -233,13 +233,43 @@ nav {
 }
 
 .icons {
-    display: flex;
-    height: 100px;
-    width: 100px;
-    gap: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 280px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  color: #304254;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.icons1,
+.icons2,
+.icons3,
+.icons4,
+.icons5,
+.icons6,
+.icons7,
+.icons8 {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
 
+.bgContent {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bgContent, .bgContent2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #304254;
+  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.bgContent2 {
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+li {
+    padding: 10px;
+}
