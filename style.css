@@ -258,13 +258,14 @@ nav {
 }
 
 .myPhoto {
-  margin: 60px;
+  margin-top: 80px;
+  margin-left: 90px;
   max-width: 100%;
-  height: 100%;
+  height: 450px;
   border-color: #000000;
   border-style: groove;
   opacity: 0;
-  animation: fadeIn 2s ease forwards, float 3s ease-in-out infinite;;
+  animation: fadeIn 2s ease forwards;
 }
 
 .aboutContent p {
@@ -273,7 +274,7 @@ nav {
   font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #304254;
   text-align: left;
-  margin-left: 90px;
+  margin-left: 30px;
   animation: slideInFromBottom 1s ease forwards;
 }
 
@@ -378,7 +379,6 @@ nav {
 .email-icon {
   width: 70px;
   height: 70px;
-  animation: float 3s ease-in-out infinite;
 }
 
 .icons {
