@@ -393,13 +393,16 @@ nav {
   width: 65vw;
   height: 300px;
   margin-left: 290px;
-  box-shadow: 5px 5px 12px 4px rgba(206, 202, 202, 0.75);
+  border-radius: 6px;
+  box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, .5);
 }
 
 .linkedin,
 .email-icon {
   width: 70px;
   height: 70px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, .5);
 }
 
 .icons {
