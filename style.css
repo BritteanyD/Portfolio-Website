@@ -1,62 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
 html {
-  background: radial-gradient(circle, rgba(254,249,245,1) 51%, rgba(172,226,166,1) 100%);
-}
-
-.section {
-    height: 100vh;
-    padding: 40px;
-}
-
-.cp {
-    height: 90vh;
-    padding-top: 1000px;
+  background: url(project\ images/pexels-steve-johnson-15448473.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes text-shadow {
-    0% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
-            0 0 0 #fefc4b;
-    }
+  0% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
 
-    20% {  
-        transform: translateY(-1em);
-        text-shadow: 
-            0 0.125em 0 #0c2ffb, 
-            0 0.25em 0 #2cfcfd, 
-            0 -0.125em 0 #fb203b, 
-            0 -0.25em 0 #fefc4b;
-    }
+  20% {
+    transform: translateY(-1em);
+    text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b,
+      0 -0.25em 0 #fefc4b;
+  }
 
-    40% {  
-        transform: translateY(0.5em);
-        text-shadow: 
-            0 -0.0625em 0 #0c2ffb, 
-            0 -0.125em 0 #2cfcfd, 
-            0 0.0625em 0 #fb203b, 
-            0 0.125em 0 #fefc4b;
-    }
-    
-   60% {
-        transform: translateY(-0.25em);
-        text-shadow: 
-            0 0.03125em 0 #0c2ffb, 
-            0 0.0625em 0 #2cfcfd, 
-            0 -0.03125em 0 #fb203b, 
-            0 -0.0625em 0 #fefc4b;
-    }
+  40% {
+    transform: translateY(0.5em);
+    text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd,
+      0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+  }
 
-    80% {  
-        transform: translateY(0);
-        text-shadow: 
-            0 0 0 #0c2ffb, 
-            0 0 0 #2cfcfd, 
-            0 0 0 #fb203b, 
-            0 0 0 #fefc4b;
-    }
+  60% {
+    transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd,
+      0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+  }
+
+  80% {
+    transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
 }
 
 @keyframes fadeIn {
@@ -69,78 +52,76 @@ html {
 }
 
 @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 @keyframes slideInFromLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
-  
-  @keyframes slideInFromRight {
-    0% {
-      opacity: 0;
-      transform: translateX(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  @keyframes slideInFromTop {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }  
+}
 
-  @keyframes slideInFromBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }  
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 nav {
   text-decoration: none;
   font-size: 16px;
   position: sticky;
   top: 0px;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.07);
   height: 50px;
-  background-color: rgba(172,226,166,1);
+  background-color: #c0a587b9;
   z-index: 1000;
 }
 
 .navMenuLink {
-  color: #304254;
   display: flex;
   list-style-type: none;
   white-space: nowrap;
@@ -153,7 +134,6 @@ nav {
 
 #verticalMenu {
   display: none;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.5rem;
   background-color: #efefef;
   margin: 0 0 0 auto;
@@ -175,12 +155,12 @@ nav {
 .navMenuLinkContent {
   display: inline-block;
   text-decoration-line: none;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 500;
   white-space: nowrap;
   padding: 10px 16px;
   margin-right: auto;
-  color: #304254;
+  color: #fff;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -188,8 +168,8 @@ nav {
 .myName,
 .myProjects,
 .background {
-  color: #000000;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0em;
@@ -199,17 +179,18 @@ nav {
 }
 
 .myName {
-    animation: slideInFromTop 1s ease forwards;
+  animation: slideInFromTop 1s ease forwards;
 }
 
 .jobTitle {
-  color: #000000;
+  color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   font-size: 40px;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
   letter-spacing: 0em;
   margin-top: 50px;
-  animation: slideInFromLeft 1s ease forwards, text-shadow 2s ease-in-out infinite;
+  animation: slideInFromLeft 1s ease forwards,
+    text-shadow 2s ease-in-out infinite;
   animation-delay: 0.5s;
 }
 
@@ -242,8 +223,8 @@ nav {
 }
 
 .aboutMe {
-  color: #000000;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0em;
@@ -262,7 +243,8 @@ nav {
   margin-left: 90px;
   max-width: 100%;
   height: 450px;
-  border-color: #000000;
+  border-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   border-style: groove;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
@@ -271,15 +253,14 @@ nav {
 .aboutContent p {
   font-size: 20px;
   font-weight: 500;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #304254;
+  color: #fff;
   text-align: left;
   margin-left: 30px;
   animation: slideInFromBottom 1s ease forwards;
 }
 
 .myProjects {
-    animation: slideInFromTop 1s ease forwards;
+  animation: slideInFromTop 1s ease forwards;
 }
 
 .word1,
@@ -337,7 +318,9 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #c0a587a0;
   box-shadow: 10px 10px 15px 4px rgba(79, 77, 77, 0.75);
+  margin-bottom: 30px;
 }
 
 .video {
@@ -346,8 +329,8 @@ nav {
 }
 
 .contact {
-  color: #000000;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0em;
@@ -362,8 +345,7 @@ nav {
   gap: 40px;
   margin-top: 40px;
   margin-left: 550px;
-  color: #304254;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -385,12 +367,11 @@ nav {
   display: flex;
   justify-content: center;
   gap: 70px;
-  color: #304254;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
 }
 
 .icons img {
-    animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 .icons1,
@@ -407,8 +388,8 @@ nav {
 }
 
 .background {
-    animation: slideInFromTop 1s ease forwards;
-    margin-bottom: 40px;
+  animation: slideInFromTop 1s ease forwards;
+  margin-bottom: 40px;
 }
 
 .bgContent {
@@ -420,8 +401,7 @@ nav {
 .bgContent2 {
   font-size: 20px;
   font-weight: 500;
-  color: #304254;
-  font-family: YACkoA9eHeY-0, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #fff;
   animation: slideInFromBottom 1s ease forwards;
 }
 
@@ -431,9 +411,26 @@ nav {
 }
 
 ul {
-    list-style:square;
+  list-style: square;
 }
 
 li {
   padding: 10px;
 }
+
+h2 {
+    color:#fff;
+}
+
+/* .homeGlass {
+    position: absolute;
+    width: ;
+    height:;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+} */
