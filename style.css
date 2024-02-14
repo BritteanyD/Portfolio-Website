@@ -8,77 +8,54 @@
 }
 
 .intro {
-    position:fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color:#fff;
-    transition: 1s;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(192, 165, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(192, 165, 135, 1) 1%,
+    rgba(241, 136, 104, 1) 50%,
+    rgba(221, 102, 96, 1) 100%
+  );
+  transition: 1s;
 }
 
 .introMsg {
-    position: absolute;
-    top:40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #d8015f;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #760069;
+  text-shadow: 0 5px 5px rgba(53, 2, 40, 0.5);
 }
 
 .msg {
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
 }
 
 .msg.active {
-    bottom: 0;
-    opacity:1;
-    transition: ease-in-out .5s;
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
 }
 
 .msg.fade {
-    bottom:150px;
-    opacity: 0;
-    transition: ease-in-out .5s;
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
 }
 
 html {
   background: url(project\ images/pexels-steve-johnson-15448473.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-@keyframes text-shadow {
-  0% {
-    transform: translateY(0);
-    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
-  }
-
-  20% {
-    transform: translateY(-1em);
-    text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b,
-      0 -0.25em 0 #fefc4b;
-  }
-
-  40% {
-    transform: translateY(0.5em);
-    text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd,
-      0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
-  }
-
-  60% {
-    transform: translateY(-0.25em);
-    text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd,
-      0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
-  }
-
-  80% {
-    transform: translateY(0);
-    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
-  }
 }
 
 @keyframes fadeIn {
@@ -229,23 +206,17 @@ nav {
 .jobTitle {
   color: #fff;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   letter-spacing: 0em;
   margin-top: 50px;
-  animation: slideInFromLeft 1s ease forwards,
-    text-shadow 2s ease-in-out infinite;
+  animation: slideInFromLeft 1s ease forwards;
   animation-delay: 0.5s;
 }
 
 .myName,
 .jobTitle {
   opacity: 0;
-}
-
-.homeInfo {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr;
 }
 
 .aboutInfo {
@@ -343,7 +314,6 @@ a {
 .word10 a:hover,
 .word11 a:hover {
   color: #20020f;
-  
 }
 
 .boxes {
