@@ -29,8 +29,8 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #760069;
-  text-shadow: 0 5px 5px rgba(53, 2, 40, 0.5);
+  color: #6213ac;
+  text-shadow: 0 5px 5px rgba(62, 56, 61, 0.5);
 }
 
 .msg {
@@ -186,7 +186,6 @@ nav {
   border-bottom: 1px solid;
 }
 
-.myName,
 .myProjects,
 .background {
   color: #fff;
@@ -200,23 +199,34 @@ nav {
 }
 
 .myName {
+    color: #fff;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  font-weight: 800;
+  font-size: 100px;
   animation: slideInFromTop 1s ease forwards;
+  animation-delay: 2.4s;
 }
 
 .jobTitle {
   color: #fff;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   letter-spacing: 0em;
   margin-top: 50px;
   animation: slideInFromLeft 1s ease forwards;
-  animation-delay: 0.5s;
+  animation-delay: 2.4s;
 }
 
-.myName,
-.jobTitle {
-  opacity: 0;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
 
 .aboutInfo {
@@ -263,7 +273,7 @@ nav {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   border-style: groove;
   opacity: 0;
-  animation: fadeIn 3s ease forwards;
+  animation: fadeIn 2s ease forwards;
 }
 
 .aboutContent p {
