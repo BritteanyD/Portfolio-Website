@@ -123,69 +123,6 @@ html {
   }
 }
 
-nav {
-  text-decoration: none;
-  font-size: 16px;
-  position: sticky;
-  top: 0px;
-  display: none;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  height: 50px;
-  background-color: #c0a58768;
-  z-index: 1000;
-}
-
-.navMenuLink {
-  display: flex;
-  list-style-type: none;
-  white-space: nowrap;
-}
-
-#horizontalMenu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#verticalMenu {
-  display: none;
-  font-size: 1.5rem;
-  background-color: #efefef;
-  margin: 0 0 0 auto;
-  padding: 0;
-  border: 12px solid #efefef;
-  height: 100%;
-  width: 400px;
-  max-width: 80vw;
-  overflow: auto;
-  box-sizing: border-box;
-  z-index: 2;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  transform: translateX(400px);
-  transition: all 0.35s;
-}
-
-.navMenuLinkContent {
-  display: inline-block;
-  text-decoration-line: none;
-  font-weight: 500;
-  white-space: nowrap;
-  padding: 10px 16px;
-  margin-right: auto;
-  color: #fff;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.navMenuLinkContent:hover {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
-
 .myProjects,
 .background {
   color: #fff;
@@ -207,7 +144,7 @@ nav {
   font-weight: 800;
   font-size: 100px;
   animation: slideInFromTop 1s ease forwards;
-  animation-delay: 2.4s;
+  animation-delay: 2.2s;
 }
 
 .jobTitle {
@@ -218,7 +155,7 @@ nav {
   letter-spacing: 0em;
   margin-top: 50px;
   animation: slideInFromLeft 1s ease forwards;
-  animation-delay: 2.4s;
+  animation-delay: 2.2s;
 }
 
 .main {
@@ -227,6 +164,12 @@ nav {
   justify-content: center;
   align-items: center;
   height: 80vh;
+}
+
+svg {
+    margin-top: 50px;
+    filter: drop-shadow( 0 10px 15px rgba(0, 0, 0, 0.5));
+    animation: float 3s ease-in-out infinite;
 }
 
 .aboutInfo {
@@ -419,18 +362,13 @@ a {
   display: inline-flex;
   gap: 40px;
   margin-top: 40px;
-  margin-left: 550px;
   color: #fff;
   font-weight: 500;
 }
 
-.contact-image {
-  margin-top: 40px;
-  width: 65vw;
-  height: 300px;
-  margin-left: 290px;
-  border-radius: 6px;
-  box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.5);
+.cC {
+    display: flex;
+    justify-content: center;
 }
 
 .linkedin,
@@ -511,15 +449,20 @@ h2 {
   color: #fff;
 }
 
-/* .homeGlass {
-    position: absolute;
-    width: ;
-    height:;
-    background: rgba(255, 255, 255, .1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-right: 2px solid rgba(255, 255, 255, .2);
-    border-bottom: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
-} */
+.section {
+    padding: 40px;
+    height: 100vh;
+}
+
+#aboutPg {
+    margin-top: 90px;
+}
+
+#backgroundPg {
+    margin-top: 1000px;
+    margin-bottom: 40px;
+}
+
+#contactPg {
+    height: 70%;
+}

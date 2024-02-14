@@ -1,8 +1,8 @@
 const intro = document.querySelector(".intro");
 const introMsg = document.querySelector(".introMsg");
 const msg = document.querySelectorAll(".msg");
-const nav = document.querySelector("nav");
-const home = window.location.pathname === "/index.html";
+// const nav = document.querySelector("nav");
+// const home = window.location.pathname === "/index.html";
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
@@ -24,11 +24,25 @@ window.addEventListener("DOMContentLoaded", () => {
       intro.style.top = "-100vh";
     }, 2500);
   });
-  if (home) {
-    setTimeout(() => {
-      nav.style.display = "flex";
-    }, 2700);
-  } else {
-    nav.style.display = "flex";
-  }
+//   if (home) {
+//     setTimeout(() => {
+//       nav.style.display = "flex";
+//     }, 2700);
+//   } else {
+//     nav.style.display = "flex";
+//   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    const sections = document.querySelectorAll(".section");
+    sections.forEach((section) => {
+      const top = section.getBoundingClientRect().top;
+      if (top >= 0 && top <= window.innerHeight) {
+        section.classList.add("active");
+      } else {
+        section.classList.remove("active");
+      }
+    });
+  });
 });
