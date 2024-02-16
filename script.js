@@ -38,18 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   gsap.registerPlugin(ScrollTrigger);
-//   document.querySelectorAll(".move").forEach(function (element) {
-//     ScrollTrigger.create({
-//       trigger: element,
-//       start: "top 80%",
-//       onEnter: function () {
-//         element.classList.add("animate");
-//       },
-//       onLeaveBack: function () {
-//         element.classList.remove("animate");
-//       },
-//     });
-//   });
-// });
+// Function to handle intersection of observed elements
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+// Create an IntersectionObserver instance
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.1,
+});
+
+document.querySelectorAll(".move").forEach((move) => {
+  observer.observe(move);
+});
