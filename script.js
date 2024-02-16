@@ -1,8 +1,6 @@
 const intro = document.querySelector(".intro");
 const introMsg = document.querySelector(".introMsg");
 const msg = document.querySelectorAll(".msg");
-// const nav = document.querySelector("nav");
-// const home = window.location.pathname === "/index.html";
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
@@ -24,13 +22,6 @@ window.addEventListener("DOMContentLoaded", () => {
       intro.style.top = "-100vh";
     }, 2500);
   });
-//   if (home) {
-//     setTimeout(() => {
-//       nav.style.display = "flex";
-//     }, 2700);
-//   } else {
-//     nav.style.display = "flex";
-//   }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,3 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   gsap.registerPlugin(ScrollTrigger);
+//   document.querySelectorAll(".move").forEach(function (element) {
+//     ScrollTrigger.create({
+//       trigger: element,
+//       start: "top 80%",
+//       onEnter: function () {
+//         element.classList.add("animate");
+//       },
+//       onLeaveBack: function () {
+//         element.classList.remove("animate");
+//       },
+//     });
+//   });
+// });

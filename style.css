@@ -200,7 +200,7 @@ svg {
   font-weight: 800;
   font-size: 90px;
   margin: 30px;
-  animation: slideInFromTop 1s ease forwards;
+  animation: slideInFromTop 1s ease forwards; 
 }
 
 .picture {
