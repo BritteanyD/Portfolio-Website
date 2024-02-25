@@ -232,6 +232,7 @@ svg {
   animation: slideInFromTop 1s ease forwards;
 }
 
+.word0,
 .word1,
 .word2,
 .word3,
@@ -255,6 +256,7 @@ a {
   color: #fff;
 }
 
+.word0 a:hover,
 .word1 a:hover,
 .word2 a:hover,
 .word3 a:hover,
@@ -276,6 +278,7 @@ a {
   gap: 70px;
 }
 
+.box0,
 .box1,
 .box2,
 .box3,
@@ -291,6 +294,7 @@ a {
   width: 350px;
 }
 
+.box0parents,
 .box1parents,
 .box2parents,
 .box3parents,
@@ -315,6 +319,7 @@ a {
   backdrop-filter: blur(30px);
 }
 
+.box0parents:hover,
 .box1parents:hover,
 .box2parents:hover,
 .box3parents:hover,
@@ -459,7 +464,7 @@ h2 {
 }
 
 #backgroundPg {
-    margin-top: 1000px;
+    margin-top: 700px;
     margin-bottom: 40px;
 }
 
