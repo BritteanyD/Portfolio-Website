@@ -276,6 +276,7 @@ a {
   justify-content: center;
   margin-top: 30px;
   gap: 70px;
+  flex-wrap: wrap;
 }
 
 .box0,
