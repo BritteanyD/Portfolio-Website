@@ -6,6 +6,11 @@
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .intro {
   position: fixed;
@@ -136,7 +141,7 @@ html {
 }
 
 .myName {
-    color: #fff;
+  color: #fff;
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
@@ -167,9 +172,9 @@ html {
 }
 
 svg {
-    margin-top: 50px;
-    filter: drop-shadow( 0 10px 15px rgba(0, 0, 0, 0.5));
-    animation: float 3s ease-in-out infinite;
+  margin-top: 50px;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+  animation: float 3s ease-in-out infinite;
 }
 
 .aboutInfo {
@@ -200,7 +205,7 @@ svg {
   font-weight: 800;
   font-size: 90px;
   margin: 30px;
-  animation: slideInFromTop 1s ease forwards; 
+  animation: slideInFromTop 1s ease forwards;
 }
 
 .picture {
@@ -373,8 +378,8 @@ a {
 }
 
 .cC {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .linkedin,
@@ -420,7 +425,7 @@ a {
 }
 
 .bgContent.active,
-.bgContent2.active{
+.bgContent2.active {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
@@ -456,19 +461,19 @@ h2 {
 }
 
 .section {
-    padding: 40px;
-    height: 100vh;
+  padding: 40px;
+  height: 100vh;
 }
 
 #aboutPg {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 #backgroundPg {
-    margin-top: 700px;
-    margin-bottom: 40px;
+  margin-top: 700px;
+  margin-bottom: 40px;
 }
 
 #contactPg {
-    height: 70%;
+  height: 70%;
 }
